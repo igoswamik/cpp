@@ -11,6 +11,8 @@ ll query(ll l,ll r){
     }
     return x;
 }
+
+
 int main()
 {
     ios_base::sync_with_stdio(false);
