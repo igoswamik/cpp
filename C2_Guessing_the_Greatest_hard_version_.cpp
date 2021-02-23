@@ -45,33 +45,14 @@ int main()
 
             int mid=(l+r)/2;
             ll i=query(l,r);
-            s="";
-            s+=to_string(l)+to_string(r);
-            m[s]=i;
             if(i>=mid){
                 ll j=query(mid,r);
-                s="";
-            s+=to_string(mid)+to_string(r);
-                m[s]=j;
                 if(i==j){
-                    l=mid;
-                }
-                else{
-                        r=mid-1;
+                    
                 }
             }
             else{
                 ll j=query(l,mid);
-                s="";
-            s+=to_string(l)+to_string(mid);
-                m[s]=j;
-                if(i==j){
-                    r=mid;
-                }
-                else{
-                        l=mid+1;
-                }
-
             }
             
             

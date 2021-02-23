@@ -9,7 +9,6 @@ int main()
     ll t;
     cin>>t;
     while(t--){
-        ll n,k;
         
     }
     return 0;
