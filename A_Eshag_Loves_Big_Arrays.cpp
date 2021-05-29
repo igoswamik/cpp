@@ -2,21 +2,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-void solve(ll n)
+void solve(int n)
 {
-    ll count = 0;
-    unordered_map<ll, ll> m;
-    for (int i = 1; i <= n; i++)
+    int arr[n];
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+    sort(arr, arr + n);
+    int x = arr[0];
+    int count = 0;
+    for (int i = 0; i < n; i++)
     {
-
-        ll x;
-        cin >> x;
-        m[x - i]++;
-    }
-    for (auto i : m)
-    {
-        ll xx = i.second;
-        count += (xx * (xx - 1)) / 2;
+        if (arr[i] > x)
+            count++;
     }
 
     cout << count << endl;
@@ -30,7 +27,7 @@ int main()
     cin >> t;
     while (t--)
     {
-        ll n;
+        int n;
         cin >> n;
         solve(n);
     }

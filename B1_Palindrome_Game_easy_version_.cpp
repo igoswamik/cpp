@@ -2,22 +2,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-void solve(int n)
+ 
+void solve(int n, string s)
 {
-    int count = 0;
-    for (int i = 1; i <= 9; i++)
-    {
+    int zc=0;
+    for(int i=0;i<n;i++) zc+=(s[i]=='0');
 
-        ll x = i;
-        while (x <= n)
-        {
-            
-            count++;
-            x = x * 10 + i;
-        }
+    if(zc>1&&n%2==1&&s[n/2]=='0'){
+        cout<<"ALICE"<<endl;
     }
-
-    cout << count << endl;
+    else{
+        cout<<"BOB"<<endl;
+    }
 }
 
 int main()
@@ -30,7 +26,9 @@ int main()
     {
         int n;
         cin >> n;
-        solve(n);
+        string s;
+        cin >> s;
+        solve(n, s);
     }
     return 0;
 }

@@ -2,24 +2,26 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-void solve(ll n)
+void solve(int n)
 {
-    ll count = 0;
-    unordered_map<ll, ll> m;
-    for (int i = 1; i <= n; i++)
-    {
+    int count = 0;
 
-        ll x;
-        cin >> x;
-        m[x - i]++;
-    }
-    for (auto i : m)
+    for (int i = 0; i < 31; i++)
     {
-        ll xx = i.second;
-        count += (xx * (xx - 1)) / 2;
+        if (1 << i & n)
+        {
+            count = i;
+        }
+    }
+    count--;
+    int k = 0;
+    while (count >= 0)
+    {
+        k += (1 << count);
+        count--;
     }
 
-    cout << count << endl;
+    cout << k << endl;
 }
 
 int main()
@@ -30,7 +32,7 @@ int main()
     cin >> t;
     while (t--)
     {
-        ll n;
+        int n;
         cin >> n;
         solve(n);
     }

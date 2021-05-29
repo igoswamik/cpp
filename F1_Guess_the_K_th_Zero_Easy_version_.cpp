@@ -21,6 +21,10 @@ void solve(ll n, ll k)
         int m = (s + e) / 2;
         int sum = help(s, m, n);
         int r = m - s + 1 - k;
+        // if(sum==0&&k==m-s+1){
+        //     s=m;
+        //     break;
+        // }
         if (sum <= r)
         {
             e = m;

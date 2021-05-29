@@ -4,22 +4,22 @@ using namespace std;
 typedef long long ll;
 void solve(ll n)
 {
-    ll count = 0;
-    unordered_map<ll, ll> m;
-    for (int i = 1; i <= n; i++)
+    if (n % 11 == 0)
     {
-
-        ll x;
-        cin >> x;
-        m[x - i]++;
-    }
-    for (auto i : m)
-    {
-        ll xx = i.second;
-        count += (xx * (xx - 1)) / 2;
+        cout << "YES" << endl;
+        return;
     }
 
-    cout << count << endl;
+    int r = n % 11;
+    ll nn = r * 111;
+    if (n >= nn)
+    {
+        cout << "YES" << endl;
+    }
+    else
+    {
+        cout << "NO" << endl;
+    }
 }
 
 int main()
