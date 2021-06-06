@@ -8,47 +8,109 @@
     <script src="https://kit.fontawesome.com/6acd34060b.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <style>
         body{
-            color: white;
+            color: green;
             box-sizing: border-box;
             align-items: center;
         }
+        .top{
+             height: 1152px;
+            width: 2048px;
+            background-color: white;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid grey;
+
+        }
         .img{
             position: relative;
-            height: 500px;
-            width: 500px;
+            height: 400px;
+            width: 1500px;
             margin: 10% auto;
+            
             padding: 15px;
-            background-color: rgb(66, 5, 94);
+            /*background-color: rgb(66, 5, 94);*/
         }
         .img h1{
-            font-size: 8em;
+            position: relative;
+            font-size: 5em;
             font-family: 'Squada One', cursive;
-            margin-top: 25%;
-            text-align: center;
+            margin-top: 100px;
+            /*text-align: center;*/
             letter-spacing: 2px;
         }
-        .img h1 span{
+        .img h1>span{
             position: absolute;
-            top: 40px;
-            left: 110px;
+            top: -62px;
+            left: 628px;
         }
         .text{
             position: absolute;
-            top: 210px;
+            top: -100px;
             padding: 20%;
+            left: 320px;
             text-align: center;
             font-size: 1.8em;
         }
+       .left{
+        font-family: 'Monoton', cursive;
+        position: absolute;
+        bottom: 25%;
+        left:200px;
+        width: 200px;
+        height: 200px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color:black;
+        opacity: 0.8;
+       }
+       .right{
+        font-family: 'Monoton', cursive;
+        position: absolute;
+        bottom: 25%;
+        right:200px;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-radius: 50%;
+        background-color:black;
+        opacity: 0.8;
+       }
+       .about{
+        font-family: 'Amatic SC', cursive;
+        font-size: 2.5em;
+        color: grey;
+        text-shadow: 1px 2px grey;
+        position: absolute;
+        bottom: 80px;
+        margin-left: 35%;
+       }
 
     </style>
 </head>
 <body>
+<div class="top">
     <div class="img">
-        <h1> <span><i class="fas fa-dove"></i></span> <div>Dijkstra</div></h1>
-        <div class="text"> Find the <b>shortest</b> path between you and me</div>
+        <h1> <span><i class="fas fa-dove"></i></span> <div>Dijkstra's</div></h1>
+        <div class="text"> Find the <b>shortest</b> path <br>between you and me</div>
+        <div class="about">SOFTWARE DEVELOPER  &  COMPETITIVE CODER</div>
+        <div class="left">Leetcode |~| GFG |~| InterviewBit |~|Codeforces</b> </div>
+        <div class="right">C++ |~| Data Structures |~| Algorithms<br> |~| MERN</b> </div>
     </div>
+</div>
     
 </body>
 </html>

@@ -1,0 +1,1 @@
+{"name":"Local: Fibonacci","url":"c:\\AllCodeforcesContestSub\\Fibonacci.cpp","tests":[{"id":1622901374136,"input":"10","output":"55"},{"id":1622901379554,"input":"20","output":"6765"},{"id":1622901381214,"input":"40","output":"102334155"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\AllCodeforcesContestSub\\Fibonacci.cpp","group":"local","local":true}

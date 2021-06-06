@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-void solve(int n)
+void solve(ll n)
 {
     int count = 0;
     for (int i = 1; i <= 9; i++)
@@ -11,7 +11,7 @@ void solve(int n)
         ll x = i;
         while (x <= n)
         {
-            
+
             count++;
             x = x * 10 + i;
         }
@@ -28,9 +28,18 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n;
-        cin >> n;
-        solve(n);
+        ll a, b, c, d;
+        cin >> a >> b >> c >> d;
+        int x = min(a, b);
+        int y = max(a, b);
+        int aa = min(c, d);
+        int bb = max(c, d);
+        if (y < aa || bb < x)
+        {
+            cout << "NO" << endl;
+        }
+        else
+            cout << "YES" << endl;
     }
     return 0;
 }

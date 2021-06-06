@@ -1,0 +1,1 @@
+{"name":"Local: FiboMemo","url":"c:\\AllCodeforcesContestSub\\FiboMemo.cpp","tests":[{"id":1622900810179,"input":"10","output":"55"},{"id":1622901073721,"input":"20","output":"6765"},{"id":1622901075106,"input":"40","output":"102334155"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\AllCodeforcesContestSub\\FiboMemo.cpp","group":"local","local":true}
