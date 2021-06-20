@@ -27,7 +27,6 @@ void solve(ll n, ll m)
         string s;
         cin >> s;
         v.push_back(s);
-        //cout << "s=" << s << endl;
     }
     vector<vector<bool>> visited(n, vector<bool>(m, false));
 
@@ -37,11 +36,6 @@ void solve(ll n, ll m)
         {
             if (!visited[i][j] && v[i][j] != '.')
             {
-                // char col = 'R';
-                // if (v[i][j] == 'R')
-                // {
-                //     col = 'W';
-                // }
                 bool ans = dfs(v, i, j, v[i][j], visited);
                 if (ans == false)
                 {
@@ -60,11 +54,6 @@ void solve(ll n, ll m)
             {
                 if (!visited[i][j] && v[i][j] != '.')
                 {
-                    // char col = 'R';
-                    // if (v[i][j] == 'R')
-                    // {
-                    //     col = 'W';
-                    // }
                     bool ans = dfs(v, i, j, v[i][j], visited);
                     if (ans == false)
                     {
@@ -75,12 +64,6 @@ void solve(ll n, ll m)
             }
         }
     }
-    //  for (int i = 0; i < n; i++)
-    // {
-    //     for (int j = 0; j < m; j++)
-    //     {
-    //         }
-    // }
 
     cout << "YES" << endl;
     for (int i = 0; i < n; i++)
