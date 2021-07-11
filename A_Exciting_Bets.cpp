@@ -2,14 +2,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-void solve(ll n)
+void solve(ll a)
 {
-    // vector<ll> v;
-    // for(int i=0;i<n;i++){
-    //     ll x;
-    //     cin>>x;
-    //     v.push_back(x);
-    // }
+    ll b;
+    cin >> b;
+    ll diff = abs(a - b);
+    if (a == b)
+    {
+        cout << 0 << " " << 0 << endl;
+        return;
+    }
+    ll r1 = a % diff;
+    ll ans = min(r1, diff - r1);
+    cout << diff << " " << ans << endl;
 }
 
 int main()
@@ -20,8 +25,6 @@ int main()
     cin >> t;
     while (t--)
     {
-        // string str; //for reading empty line
-        // getline(cin, str);
         ll n;
         cin >> n;
         solve(n);
