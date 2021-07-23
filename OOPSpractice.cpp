@@ -45,7 +45,7 @@ int main()
     cin >> x;
     Base *pBase = new Derived;
     pBase->fun(); // compile time polymorphism  at compile time we checked that pBase if pointer of type Base so we called func() of base class we didn't checked what its pointing to
-    // To achive run time polymorphism , WE USE VIRTUAL FUNCTIONS, put virtual keyword in fron of fun() in base class
+    // To achive Run time polymorphism , WE USE VIRTUAL FUNCTIONS, put virtual keyword in fron of fun() in base class
     // So at run time since pBase is pointing to Derived class obj, and there is virtual in Base class fun(), Derived class function will be called in that case if present, otherwise virtual fun() will get called
     // Der obj;
     // obj.Base::fun();
