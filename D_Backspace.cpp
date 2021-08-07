@@ -42,6 +42,7 @@ bool check(string &s, int i, string &t, int j)
     return ans;
 }
 
+
 void solve()
 {
     string s, t;
@@ -73,6 +74,7 @@ void solve()
 
     cout << "NO" << endl;
 }
+
 
 int main()
 {
